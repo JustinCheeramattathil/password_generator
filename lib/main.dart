@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:password_generator/home_page.dart';
+import 'package:password_generator/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,16 +23,8 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: const Color.fromARGB(255, 212, 209, 209),
-        appBar: AppBar(
-          backgroundColor: Colors.teal,
-          title: const Text(
-            'Password Generator',
-            style: TextStyle(fontSize: 20.0),
-          ),
-          centerTitle: true,
-        ),
         body: Builder(
-          builder: (context) => HomePage(),
+          builder: (context) => Splash(),
         ),
       ),
       theme: ThemeData(
